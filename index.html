@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator PPN dan DPP</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="calculator">
+  <h3 style="text-align: center;"><p>Value-added tax (VAT) Calculator (Kalkulator PPN)</p></h3><br>
+  <div class="desc">
+    <p style="font-size: 50%;"><b>Description : <br></b>Quickly calculate Value-added tax (VAT) using our fast online calculator.
+      <br>
+      - Menghitung PPN (Pajak Pertambahan Nilai)
+      <br>
+      - ⁠Mencari DPP (Dasar Pengenaan Pajak)</p>
+  </div>
+    <br>
+  <div>
+    <label for="calc-type">Pilih Kalkulasi:</label>
+    <select id="calc-type">
+      <option value="ppn">Hitung PPN dari nilai barang / jasa</option>
+      <option value="dpp">Mencari DPP dari nilai barang atau jasa</option>
+    </select>
+  </div>
+  <input type="number" id="input-value" placeholder="Masukkan nilai tanpa tanda symbol (.) dan (,)">
+  <div>
+    <label for="ppn-rate">Pilih Tarif PPN:</label>
+    <select id="ppn-rate">
+      <option value="0.1">10% (1983 - 2021 )</option>
+      <option value="0.11">11% (2022 - 2024 )</option>
+      <option value="0.12">12% (2025)</option>
+    </select>
+  </div>
+  <button onclick="calculate()">Hitung</button>
+  <p id="result-label"></p>
+  <p id="result"></p>
+  <div class="keterangan">
+    <p style="font-size: 50%;"><b>Keterangan : </b>
+      <br>
+      - Tarif 10% (berdasarkan UU Nomor 8 Tahun 1983)
+      <br>
+      - ⁠Tarif 11% & 12% (berdasarkan UU No. 07 Tahun 2021)
+  </div>
+  <div class="ident">
+    <p style="font-size: 50%; text-align: center;">Team 2 - Accounting Information System Design (Angelica Piri, Cleysi Sanger, and Dian Salakay), from Sam Ratulangi University, Faculty of Economics and Business, Department of Accounting.</p>
+  </div>
+</div>
+ 
+ <script src="js/script.js"></script>
+</body>
+</html>
